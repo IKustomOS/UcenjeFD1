@@ -1,0 +1,16 @@
+body {
+}
+
+h1{
+    color: rgb(60, 67, 123);
+    text-align: left;
+}
+
+em {
+    strong {
+        color: rgb(0, 0, 0);
+    }
+
+#sadrzaj h3{
+    border-radius: 20px;
+}
