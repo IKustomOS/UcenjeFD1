@@ -1,2 +1,49 @@
-body{   
+body{
+    background-color: bisque;
+    font-family: sans-serif;
+}
+
+.container{
+    /* background-color: white; */
+    margin: auto;
+    max-width: 960px;
+    display: grid;
+    grid-template-areas: "a b c d";
+
+}
+
+.a{grid-area: a;}
+.b{grid-area: b;}
+.c{grid-area: c;}
+.d{grid-area: d;}
+
+.panel{
+    /* background-color: aqua; */
+    border: 2px solid gainsboro;
+    border-radius: 10;
+    text-align: center;
+}
+
+img{
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.cijena{
+    color: green;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+button{
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 6px;
+    border: 0px;
+    border-radius: 5px;
 }
