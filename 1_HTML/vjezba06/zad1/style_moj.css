@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(255, 252, 249);
+    border-radius: 20px;
+}
+
+div{
+    background-color: azure;
+    border-radius: 20px;
+    
+}
+
+h1{
+    margin-top: 10%;
+    color: rgb(32, 15, 101);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color: rgba(0, 0, 0, 0.449);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
