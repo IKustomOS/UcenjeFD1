@@ -1,0 +1,56 @@
+body{
+    font-family: sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+li{
+    text-align: center;
+}
+
+/*tablet*/
+@media (min-width: 450px) {
+    body{
+        background-color: rgb(255, 155, 25);
+    }
+}
+
+/*Tablet pejzažno*/
+
+@media (orientation: landscape) and (min-width: 450px) {
+    body{
+        background-color: rgb(162, 0, 255);
+    }
+}
+
+/* prilagodba za desktop u učionici 2 */
+@media (min-width: 650px) {
+/* inače je 1024px */
+    ul{
+        flex-direction: row;
+        justify-content: center;
+    }
+    body{
+        background-color: white;
+    }
+}
+
+/* prilagodba za ispis */
+@media print{
+    nav{
+        display: none;
+    }
+}
