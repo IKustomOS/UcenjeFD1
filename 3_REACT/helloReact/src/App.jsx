@@ -1,17 +1,22 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Container } from 'react-bootstrap'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+
 import react from './assets/react.svg'
 import Table from 'react-bootstrap/Table';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import Figure from 'react-bootstrap/Figure';
+
 import './App.css'
+import { Card, Container } from 'react-bootstrap';
 
 function App() {
   
   return (
     
     <Container> 
+
+      <a href="moduli/index.html">Moduli</a>
+
+      <Accordion></Accordion>
       
       <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src= {react} />
@@ -56,6 +61,18 @@ function App() {
     </Table>
     
     <ProgressBar now={60} />;
+
+    <Figure>
+      <Figure.Image
+        width={171}
+        height={180}
+        alt="171x180"
+        src="holder.js/171x180"
+      />
+      <Figure.Caption>
+        Nulla vitae elit libero, a pharetra augue mollis interdum.
+      </Figure.Caption>
+    </Figure>
     
     </Container>
 
