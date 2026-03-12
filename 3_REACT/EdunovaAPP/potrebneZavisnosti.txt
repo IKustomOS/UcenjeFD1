@@ -1,0 +1,4 @@
+U terminalu nakon što se zaustavi aplikaciju (ctrl+c) potrebno izvesi:
+
+npm install react-bootstrap bootstrap
+
