@@ -1,9 +1,10 @@
-export default function FormatDatuma({datum, prikazZadano='-'}){
-    if (!datum) {
+// datum je tipa podatka string
+export default function FormatDatuma({datum,prikazZadano='-'}){
+    if(!datum){
         return prikazZadano
     }
-    const d = new Date(datum)
-    if (isNaN(d.getTime())) {
+    const d = new Date(datum) // d je objekt tipa Date
+    if(isNaN(d.getTime())){
         return prikazZadano
     }
     return Intl.DateTimeFormat('hr-HR',{
