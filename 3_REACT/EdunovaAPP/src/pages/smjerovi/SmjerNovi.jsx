@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 export default function SmjerNovi() {
 
 async function dodaj(smjer) {
-    console.log(smjer)
+    // console.table(smjer) 
+    await SmjerService.dodaj(smjer).then(()=>{
+        navigate(RouteNames.SMJEROVI)
+    })
 }
 
 function odradiSubmit(e) {

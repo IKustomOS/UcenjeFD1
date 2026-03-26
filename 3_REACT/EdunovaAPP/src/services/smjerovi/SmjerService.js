@@ -5,7 +5,17 @@ async function get() {
     return {data: smjerovi}
 }
 
+async function dodaj(smjer) {
+    if(smjerovi.length > 0) {
+        smjer.sifra = smjerovi[smjerovi.length-1].sifra + 1;
+    } else {
+        smjer.sifra = 1;
+    }
+    smjerovi.push(smjer);
+    return {data: smjer}
+}
 
 export default{
-    get
+    get,
+    dodaj
 }
